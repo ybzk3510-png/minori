@@ -1,4 +1,6 @@
 const header = document.querySelector(".header");
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
 
 const updateHeader = () => {
   if (!header) return;
@@ -7,6 +9,26 @@ const updateHeader = () => {
 
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
+
+if (menuToggle && nav) {
+  const closeMenu = () => {
+    menuToggle.classList.remove("is-open");
+    nav.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "メニューを開く");
+  };
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.classList.toggle("is-open");
+    nav.classList.toggle("is-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+}
 
 const revealTargets = document.querySelectorAll(
   ".section-heading, .concept, .commitment-grid article, .menu-card, .split-image, .split-copy, .shop-photo, .shop-info, .instagram > .section-label, .instagram h2, .instagram p, .instagram-grid img, .cta, .notice, .page-hero"
