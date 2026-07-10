@@ -26,6 +26,7 @@ body {
     linear-gradient(180deg, #fffdf9 0%, var(--bg) 42%, #f7f2eb 100%);
   font-family: "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
   line-height: 1.9;
+  line-break: strict;
   overflow-x: hidden;
 }
 
@@ -257,6 +258,7 @@ h3 {
   margin: 0;
   font-weight: 400;
   line-height: 1.45;
+  text-wrap: balance;
 }
 
 h1,
@@ -278,6 +280,18 @@ h3 {
   margin: 18px 0 10px;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 27px;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.hero-copy h1 span {
+  display: block;
+}
+
+.hero-copy p {
+  max-width: 23em;
 }
 
 .section {
@@ -665,6 +679,18 @@ h3 {
   .hero {
     min-height: auto;
     padding: 96px 6vw 70px;
+  }
+
+  .hero-copy h1 span {
+    display: inline;
+  }
+
+  h1 {
+    font-size: clamp(34px, 10vw, 48px);
+  }
+
+  h2 {
+    font-size: clamp(29px, 8vw, 42px);
   }
 
   .hero-slider,
