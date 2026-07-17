@@ -346,6 +346,14 @@ p {
   color: var(--muted);
 }
 
+.story-text-sp {
+  display: none;
+}
+
+.story-line {
+  display: block;
+}
+
 .story-inner h2,
 .concept h2,
 .section-heading h2,
@@ -1018,6 +1026,14 @@ p {
   .material-feature,
   .map-card {
     padding: 40px 6vw;
+  }
+
+  .story-text-pc {
+    display: none;
+  }
+
+  .story-text-sp {
+    display: block;
   }
 
   .limited-section {
