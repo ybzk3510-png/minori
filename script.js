@@ -31,7 +31,7 @@ if (menuToggle && nav) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".section-heading, .concept, .commitment-grid article, .menu-card, .split-image, .split-copy, .shop-photo, .shop-info, .instagram > .section-label, .instagram h2, .instagram p, .instagram-grid img, .cta, .notice, .page-hero"
+  ".section-heading, .concept, .brand-story, .commitment-grid article, .material-feature, .limited-section, .menu-card, .split-image, .split-copy, .shop-photo, .shop-info, .access-grid article, .faq-list details, .instagram > .section-label, .instagram h2, .instagram p, .instagram-grid img, .cta, .notice, .page-hero"
 );
 
 revealTargets.forEach((target, index) => {
