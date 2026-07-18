@@ -382,6 +382,34 @@ p {
   color: var(--muted);
 }
 
+.concept-text-sp {
+  display: none;
+}
+
+.commitment-lead-sp {
+  display: none;
+}
+
+.limited-text-sp {
+  display: none;
+}
+
+.gift-text-sp {
+  display: none;
+}
+
+.faq-allergy-sp {
+  display: none;
+}
+
+.faq-expiry-sp {
+  display: none;
+}
+
+.faq-reserve-sp {
+  display: none;
+}
+
 .section-heading {
   max-width: 760px;
 }
@@ -1034,6 +1062,60 @@ p {
 
   .story-text-sp {
     display: block;
+    max-width: 20em;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .concept-text-pc {
+    display: none;
+  }
+
+  .concept-text-sp {
+    display: block;
+    max-width: 21em;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .commitment-lead-pc {
+    display: none;
+  }
+
+  .commitment-lead-sp {
+    display: block;
+    max-width: 22em;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .limited-text-pc {
+    display: none;
+  }
+
+  .limited-text-sp {
+    display: block;
+    max-width: 20em;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .gift-text-pc {
+    display: none;
+  }
+
+  .gift-text-sp {
+    display: block;
+    max-width: 19em;
+    line-height: 2;
   }
 
   .limited-section {
@@ -1059,5 +1141,35 @@ p {
 
   .faq-list .text-line {
     white-space: normal;
+  }
+
+  .faq-allergy-pc {
+    display: none;
+  }
+
+  .faq-allergy-sp {
+    display: block;
+    max-width: 24em;
+    line-height: 2;
+  }
+
+  .faq-expiry-pc {
+    display: none;
+  }
+
+  .faq-expiry-sp {
+    display: block;
+    max-width: 23em;
+    line-height: 2;
+  }
+
+  .faq-reserve-pc {
+    display: none;
+  }
+
+  .faq-reserve-sp {
+    display: block;
+    max-width: 21em;
+    line-height: 2;
   }
 }
