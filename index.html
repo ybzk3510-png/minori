@@ -1,419 +1,494 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>minori 焼き菓子</title>
-  <meta name="description" content="静岡の米粉焼き菓子店 minori。女性の人生の記憶に残る、想いに寄り添う焼き菓子をお届けします。">
-  <link rel="stylesheet" href="style.css?v=20260724-08">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>minori — やさしく実る、農薬不使用米粉の焼き菓子</title>
+<meta name="description" content="農薬不使用の米粉と静岡の実りから生まれる、やさしい焼き菓子。あなたの人生の節目にそっと寄り添う一箱を、丁寧にお届けします。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo" aria-label="minori トップページ">
-      <img src="image/5.png" alt="minori">
-    </a>
 
-    <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
+<!-- Header -->
+<header class="header" id="header">
+  <nav class="header-nav">
+    <a href="#concept">Concept</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#story">Story</a>
+    <a href="#store">Store</a>
+  </nav>
+  <a href="#" class="logo">minori</a>
+  <div class="header-right">
+    <div class="header-lang">
+      <span class="active">JP</span> / <span>EN</span>
+    </div>
+    <a href="https://lin.ee/8O09nON" class="header-cart">Official LINE</a>
+  </div>
+  <button class="menu-btn" aria-label="menu"><span></span><span></span><span></span></button>
+</header>
 
-    <nav class="nav" aria-label="メインナビゲーション">
-      <a href="#story">Story</a>
-      <a href="#concept">Concept</a>
-      <a href="#commitment">Commitment</a>
-      <a href="menu.html">Menu</a>
-      <a href="#gift">Gift</a>
-      <a href="#shop">Shop</a>
-      <a href="#faq">FAQ</a>
-      <a href="https://lin.ee/8O09nON" class="nav-line">Official LINE</a>
-    </nav>
+<!-- Hero -->
+<section class="hero" data-screen-label="01 Hero">
+  <span class="hero-petal p1">✿</span>
+  <span class="hero-petal p2">♡</span>
+  <span class="hero-petal p3">✿</span>
+  <span class="hero-petal p4">♡</span>
 
-    <a href="https://lin.ee/8O09nON" class="line-btn">Official LINE</a>
-  </header>
+  <div class="hero-ornament fade-in">— for you, with love —</div>
+  <div class="hero-eyebrow fade-in d1">Gluten Free · Rice Flour · Shizuoka</div>
+  <h1 class="fade-in d1">
+    <strong style='font-family:"Shippori Mincho", serif; font-weight:500;'>女性の人生に、<br>そっと寄り添う。</strong><br>
+    <strong style='font-family:"Shippori Mincho", serif; font-weight:500;' class="brand-jp">米粉の焼き菓子 MINORi</strong>
+  </h1>
+  <p class="hero-sub fade-in d2" style="font-size:13px;">
+    静岡の実りと、農薬を使用せずに育てられた米粉。<br>
+    大切なあの人へ。<br>
+    そして、今日も頑張る自分自身へ。<br>
+    心ほどける、やさしい米粉の焼き菓子を。
+  </p>
+  <div class="hero-collage fade-in d3">
+    <div class="hero-badge">— since 2024 —</div>
+    <div class="img img-1"><img class="photo-fit" src="image/94C0A15F-341A-4005-8A80-A7A01DFED787_1_105_c.jpeg" alt="minoriの焼き菓子"></div>
+    <div class="img img-2"><img class="photo-fit" src="image/D18104F6-0AE2-4263-A77D-821DA3BACC09_1_105_c.jpeg" alt="焼き菓子の盛り合わせ"></div>
+    <div class="img img-3"><img class="photo-fit" src="image/087FD5FF-FFD7-451F-AE87-1F81F7FF85D5_1_105_c.jpeg" alt="抹茶の焼き菓子"></div>
+  </div>
 
-  <main>
-    <section class="hero">
-      <div class="hero-image hero-slider" aria-label="minoriの写真スライド">
-        <img class="hero-slide is-active" src="image/94C0A15F-341A-4005-8A80-A7A01DFED787_1_105_c.jpeg" alt="minoriの焼き菓子">
-        <img class="hero-slide" src="image/001EDBB1-DEEF-41C0-B6F7-577C7AD47260_4_5005_c.jpeg" alt="焼き菓子の販売風景">
-        <img class="hero-slide" src="image/87985CFB-90EC-486C-8C89-8137D1C9EABB_1_105_c.jpeg" alt="minoriのギフト">
-        <img class="hero-slide" src="image/D18104F6-0AE2-4263-A77D-821DA3BACC09_1_105_c.jpeg" alt="焼き菓子の盛り合わせ">
-        <div class="hero-dots" aria-hidden="true"></div>
-      </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
 
-      <div class="hero-copy">
-        <p class="section-label">Rice flour baked sweets</p>
-        <h1><span>人生の節目に、</span><span>そっと残る焼き菓子を。</span></h1>
-        <p>
-          <span class="text-line">大切な人へ、自分自身へ。</span>
-          <span class="text-line">女性の人生に寄り添い続ける、</span>
-          <span class="text-line">記憶に残る米粉の焼き菓子を</span>
-          <span class="text-line">お届けします。</span>
-        </p>
-        <div class="hero-tags" aria-label="minoriの特徴">
-          <span>週末限定</span>
-          <span>数量限定</span>
-          <span>公式LINE予約</span>
-        </div>
-        <a href="https://lin.ee/8O09nON" class="primary-btn">ご予約・お問い合わせ</a>
-      </div>
-    </section>
-
-    <section id="story" class="section brand-story">
-      <div class="story-inner">
-        <p class="section-label">Brand Story</p>
-        <h2>女性の人生に寄り添い続ける焼き菓子。</h2>
-        <p class="story-text story-text-pc">
-          誕生日、出産祝い、感謝を伝えたい日、自分を少し労わりたい日。<br>
-          minoriの焼き菓子は、そんな人生の小さな節目にそっと寄り添う贈りものです。
-        </p>
-        <p class="story-text story-text-pc">
-          ただ甘いだけではなく、受け取った瞬間の表情や、その日の記憶までやさしく残るように。<br>
-          素材選びから包み方まで、ひとつひとつ丁寧にお作りしています。
-        </p>
-        <p class="story-text story-text-sp">
-          <span class="story-line">誕生日、出産祝い、</span>
-          <span class="story-line">感謝を伝えたい日。</span>
-          <span class="story-line">自分を少し労わりたい日。</span>
-          <span class="story-line">minoriの焼き菓子は、</span>
-          <span class="story-line">人生の小さな節目に</span>
-          <span class="story-line">そっと寄り添う贈りものです。</span>
-        </p>
-        <p class="story-text story-text-sp">
-          <span class="story-line">ただ甘いだけではなく、</span>
-          <span class="story-line">受け取った瞬間の表情や、</span>
-          <span class="story-line">その日の記憶まで</span>
-          <span class="story-line">やさしく残るように。</span>
-          <span class="story-line">素材選びから包み方まで、</span>
-          <span class="story-line">ひとつひとつ丁寧に</span>
-          <span class="story-line">お作りしています。</span>
-        </p>
-      </div>
-    </section>
-
-    <section id="concept" class="section concept">
-      <p class="section-label">Concept</p>
-      <h2><span>想いに寄り添う、</span><span>やさしい贈りもの。</span></h2>
-      <p class="concept-text-pc">
-        minoriは、日々の小さな節目や大切な記憶に寄り添う焼き菓子ブランドです。<br>
-        素材のやさしさと、手作りの温度を大切にしながら、<br>
-        贈る人と受け取る人の心に残るひとときをお届けします。
+<!-- Concept -->
+<section class="concept" id="concept" data-screen-label="02 Concept">
+  <div class="concept-inner">
+    <div class="eyebrow fade-in">Concept</div>
+    <h2 class="title fade-in d1">
+      静岡の実りで、<br>
+      <span class="script">健康と美容</span>を育む。
+    </h2>
+    <div class="concept-divider fade-in d1">
+      <span class="line"></span><span class="dot"></span><span class="line"></span>
+    </div>
+    <div class="concept-quote fade-in d2">
+      「大切な人への想いを紡ぐ、<br>やさしい焼き菓子を。」
+    </div>
+    <div class="concept-body">
+      <p class="fade-in d3">
+        女性の人生には、いくつもの大切な節目があります。<br>
+        仕事の飛躍、結婚、妊活、つわり、妊娠、子育て、<br>
+        社会復帰、子育てと仕事の両立、孫育て。
       </p>
-      <p class="concept-text-sp">
-        <span class="text-line">minoriは、日々の小さな節目や</span>
-        <span class="text-line">大切な記憶に寄り添う</span>
-        <span class="text-line">焼き菓子ブランドです。</span>
-        <span class="text-line">素材のやさしさと、</span>
-        <span class="text-line">手作りの温度を大切にしながら、</span>
-        <span class="text-line">贈る人と受け取る人の心に</span>
-        <span class="text-line">残るひとときをお届けします。</span>
+      <p class="fade-in d4">
+        時に立ち止まって涙する日、懸命に駆け抜ける毎日、<br>
+        幸せを分かち合う日も。<br>
+        あなたの人生に、そっと寄り添い続けるお店でありたいと願っています。
       </p>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="commitment" class="section">
-      <div class="section-heading">
-        <p class="section-label">Commitment</p>
-        <h2>素材へのこだわり</h2>
-        <p class="commitment-lead-pc">
-          からだにやさしいだけでなく、贈りものとして<br>
-          心から安心して選べる焼き菓子を目指しています。
-        </p>
-        <p class="commitment-lead-sp">
-          <span class="text-line">からだにやさしいだけでなく、</span>
-          <span class="text-line">贈りものとして心から安心して選べる</span>
-          <span class="text-line">焼き菓子を目指しています。</span>
-        </p>
+<!-- About -->
+<section class="about" id="about" data-screen-label="03 About">
+  <div class="about-grid">
+    <div class="about-images fade-in">
+      <div class="img img-1"><img class="photo-fit" src="image/3DF7E6A3-B666-4CA0-AABE-89B9CC795886_1_105_c.jpeg" alt="抹茶の焼き菓子"></div>
+      <div class="img img-2"><img class="photo-fit" src="image/87985CFB-90EC-486C-8C89-8137D1C9EABB_1_105_c.jpeg" alt="個包装された焼き菓子"></div>
+      <div class="img-tag">
+        <span class="num">— Fig. 01 —</span>
+        農薬不使用<br>静岡県産の米粉
       </div>
-
-      <div class="commitment-grid">
-        <article>
-          <span class="commitment-icon">🌾</span>
-          <h3>農薬不使用の米粉</h3>
-          <p>
-            <span class="text-line">米粉農家さんから直接仕入れた、</span>
-            <span class="text-line">農薬不使用の米粉を使用しています。</span>
-            <span class="text-line">あぐり佐野さん、どんぐり農園さんの</span>
-            <span class="text-line">想いも大切にしています。</span>
-          </p>
-        </article>
-        <article>
-          <span class="commitment-icon">🧈</span>
-          <h3>素材の風味を大切に</h3>
-          <p>
-            <span class="text-line">卵、乳製品、アーモンドなど、</span>
-            <span class="text-line">素材ごとの香りや食感を活かします。</span>
-            <span class="text-line">ひとつひとつ丁寧に焼き上げています。</span>
-          </p>
-        </article>
-        <article>
-          <span class="commitment-icon">🎁</span>
-          <h3>贈りものに合う佇まい</h3>
-          <p>
-            <span class="text-line">大切な方へ安心して贈れるように。</span>
-            <span class="text-line">味わいはもちろん、見た目や</span>
-            <span class="text-line">ラッピングの美しさも大切にしています。</span>
-          </p>
-        </article>
-      </div>
-
-      <div class="material-feature">
-        <img src="image/55ABA37D-909F-4112-9EF3-AAEFCA1D42E3_1_201_a.jpeg" alt="米粉素材へのこだわり">
-        <div>
-          <p class="section-label">Rice Flour</p>
-          <h3>農家さんの想いまで、焼き菓子に。</h3>
-          <p>
-            これから米粉農家さんのお写真をいただいたら、こちらに差し替えて紹介できます。
-            素材の背景が見えることで、minoriらしい安心感と物語がより伝わります。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="limited-section">
-      <p class="section-label">Limited</p>
-      <h2>週末だけの、数量限定販売。</h2>
-      <p class="limited-text-pc">
-        <span class="text-line">minoriは金曜日・土曜日を中心に、不定期で営業しています。</span>
-        <span class="text-line">ひとつひとつ手作りのため、販売数には限りがあります。</span>
-      </p>
-      <p class="limited-text-sp">
-        <span class="text-line">minoriは金曜日・土曜日を中心に、</span>
-        <span class="text-line">不定期で営業しています。</span>
-        <span class="text-line">ひとつひとつ手作りのため、</span>
-        <span class="text-line">販売数には限りがあります。</span>
-      </p>
-      <div class="limited-badges">
-        <span>週末限定</span>
-        <span>数量限定</span>
-        <span>お取り置きは公式LINEへ</span>
-      </div>
-    </section>
-    
-    <section class="section menu-preview">
-      <div class="section-heading">
-        <p class="section-label">Menu</p>
-        <h2>定番と季節の焼き菓子</h2>
-      </div>
-
-      <div class="menu-grid">
-        <article class="menu-card">
-          <img src="image/A9703D93-C857-466E-A6FC-12090D8DC847_1_105_c.jpeg" alt="フィナンシェ">
-          <h3>Financier</h3>
-          <p>
-            <span class="text-line">焦がしバターの香りが広がる、</span>
-            <span class="text-line">しっとり食感の焼き菓子。</span>
-          </p>
-        </article>
-        <article class="menu-card">
-          <img src="image/9031F094-A658-4DE8-8C6A-72DAD2084527_4_5005_c.jpeg" alt="クッキー">
-          <h3>Cookie</h3>
-          <p>
-            <span class="text-line">米粉ならではのやさしい口どけを</span>
-            <span class="text-line">楽しめる焼き菓子。</span>
-          </p>
-        </article>
-        <article class="menu-card">
-          <img src="image/D6634F5E-1B77-4255-9321-F2EBD4145AC1_1_105_c.jpeg" alt="焼き菓子の詰め合わせ">
-          <h3>Assort</h3>
-          <p>
-            <span class="text-line">贈りものにもぴったりな、</span>
-            <span class="text-line">季節の焼き菓子の詰め合わせ。</span>
-          </p>
-        </article>
-      </div>
-
-      <div class="button-area">
-        <a href="menu.html" class="text-link">メニューを見る</a>
-      </div>
-    </section>
-
-    <section id="gift" class="split-section">
-      <div class="split-image">
-        <img src="image/87985CFB-90EC-486C-8C89-8137D1C9EABB_1_105_c.jpeg" alt="minoriのギフト">
-      </div>
-      <div class="split-copy">
-        <p class="section-label">Gift</p>
-        <h2>ギフトに人気の焼き菓子。</h2>
-        <p class="gift-text-pc">
-          <span class="text-line">誕生日、出産祝い、お礼、自分へのご褒美に。</span>
-          <span class="text-line">女性の人生の節目に寄り添う、</span>
-          <span class="text-line">やさしいギフトとして選ばれています。</span>
-        </p>
-        <p class="gift-text-sp">
-          <span class="text-line">誕生日、出産祝い、お礼、</span>
-          <span class="text-line">自分へのご褒美に。</span>
-          <span class="text-line">女性の人生の節目に寄り添う、</span>
-          <span class="text-line">やさしいギフトとして</span>
-          <span class="text-line">選ばれています。</span>
-        </p>
-        <div class="gift-list">
-          <span>Birthday</span>
-          <span>Thank you</span>
-          <span>Baby gift</span>
-          <span>For me</span>
-        </div>
-        <a href="https://lin.ee/8O09nON" class="primary-btn">公式LINEで相談する</a>
-      </div>
-    </section>
-
-    <section id="shop" class="section shop">
-      <div class="shop-photo">
-        <img src="image/EF8A7D91-CA54-4635-A4BE-FF7B2E94885D_1_105_c.jpeg" alt="minoriの店舗外観">
-      </div>
-      <div class="shop-info">
-        <p class="section-label">Shop Info</p>
-        <h2>店舗情報</h2>
-        <dl>
-          <div>
-            <dt>営業日</dt>
-            <dd>金曜日・土曜日（不定期）10:00-15:00</dd>
-          </div>
-          <div>
-            <dt>住所</dt>
-            <dd>
-              <span class="text-line">〒421-0122</span>
-              <span class="text-line">静岡県静岡市駿河区用宗3丁目9-27</span>
-            </dd>
-          </div>
-          <div>
-            <dt>ご予約</dt>
-            <dd>公式LINEよりお願いいたします。</dd>
-          </div>
-          <div>
-            <dt>最新情報</dt>
-            <dd>Instagramにてお知らせしています。</dd>
-          </div>
-          <div>
-            <dt>アクセス</dt>
-            <dd>Googleマップをご確認ください。駐車場写真は後日掲載予定です。</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="section access-section">
-      <div class="section-heading">
-        <p class="section-label">Access</p>
-        <h2>ご来店前にご確認ください。</h2>
-        <p>
-          <span class="text-line">〒421-0122</span>
-          <span class="text-line">静岡県静岡市駿河区用宗3丁目9-27</span>
-        </p>
-      </div>
-      <div class="access-grid">
-        <article>
-          <img src="image/EF8A7D91-CA54-4635-A4BE-FF7B2E94885D_1_105_c.jpeg" alt="店舗外観と駐車場案内">
-          <h3>Parking</h3>
-          <p>駐車場写真を入れることで、初めての方にも安心してご来店いただけます。</p>
-        </article>
-        <article class="map-card">
-          <p class="section-label">Google Map</p>
-          <h3>所在地</h3>
-          <p>
-            <span class="text-line">〒421-0122</span>
-            <span class="text-line">静岡県静岡市駿河区用宗3丁目9-27</span>
-          </p>
-          <div class="map-embed">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.376328848687!2d138.3626993749587!3d34.9220976728418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601a4850e99ba0b1%3A0x4d43dc347b44047c!2z44CSNDIxLTAxMjIg6Z2Z5bKh55yM6Z2Z5bKh5biC6ae_5rKz5Yy655So5a6X77yT5LiB55uu77yZ4oiS77yS77yX!5e0!3m2!1sja!2sjp!4v1784322878553!5m2!1sja!2sjp" title="minori Google Map" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="faq" class="section faq">
-      <div class="section-heading">
-        <p class="section-label">FAQ</p>
-        <h2>よくある質問</h2>
-      </div>
-      <div class="faq-list">
-        <details>
-          <summary>アレルギーについて教えてください。</summary>
-          <p class="faq-allergy-pc">
-            <span class="text-line">卵、乳製品、アーモンドを使用しています。</span>
-            <span class="text-line">アレルギーをお持ちの方は、ご予約前に公式LINEよりご相談ください。</span>
-          </p>
-          <p class="faq-allergy-sp">
-            <span class="text-line">卵、乳製品、アーモンドを使用しています。</span>
-            <span class="text-line">アレルギーをお持ちの方は、</span>
-            <span class="text-line">ご予約前に公式LINEよりご相談ください。</span>
-          </p>
-        </details>
-        <details>
-          <summary>賞味期限はどのくらいですか？</summary>
-          <p class="faq-expiry-pc">
-            <span class="text-line">目安は製造日より7日間です。</span>
-            <span class="text-line">商品により異なる場合があるため、詳細はお渡し時にご案内します。</span>
-          </p>
-          <p class="faq-expiry-sp">
-            <span class="text-line">目安は製造日より7日間です。</span>
-            <span class="text-line">商品により異なる場合があるため、</span>
-            <span class="text-line">詳細はお渡し時にご案内します。</span>
-          </p>
-        </details>
-        <details>
-          <summary>予約はどこからできますか？</summary>
-          <p class="faq-reserve-pc">
-            <span class="text-line">ご予約・お問い合わせは公式LINEよりお願いいたします。</span>
-            <span class="text-line">数量限定のため、事前のご予約がおすすめです。</span>
-          </p>
-          <p class="faq-reserve-sp">
-            <span class="text-line">ご予約・お問い合わせは</span>
-            <span class="text-line">公式LINEよりお願いいたします。</span>
-            <span class="text-line">数量限定のため、</span>
-            <span class="text-line">事前のご予約がおすすめです。</span>
-          </p>
-        </details>
-        <details>
-          <summary>支払い方法は何がありますか？</summary>
-          <p class="faq-payment-pc">クレジットカード、PayPayでのお支払いに対応しています。</p>
-          <p class="faq-payment-sp">
-            <span class="text-line">クレジットカード、PayPayでの</span>
-            <span class="text-line">お支払いに対応しています。</span>
-          </p>
-        </details>
-      </div>
-    </section>
-
-    <section id="instagram" class="section instagram">
-      <p class="section-label">Instagram</p>
-      <h2>日々のお知らせ</h2>
-      <p class="instagram-lead-pc">最新メニューや営業情報はInstagramにてお知らせしています。</p>
-      <p class="instagram-lead-sp">
-        <span class="text-line">最新メニューや営業情報は</span>
-        <span class="text-line">Instagramにてお知らせしています。</span>
-      </p>
-      <div class="instagram-grid">
-        <img src="image/001EDBB1-DEEF-41C0-B6F7-577C7AD47260_4_5005_c.jpeg" alt="焼き菓子の販売風景">
-        <img src="image/47634660-FA8D-4016-A1D9-877B5BDD4DC2_1_105_c.jpeg" alt="焼き菓子">
-        <img src="image/D18104F6-0AE2-4263-A77D-821DA3BACC09_1_105_c.jpeg" alt="焼き菓子の盛り合わせ">
-      </div>
-      <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="text-link" target="_blank" rel="noopener">Instagramを見る</a>
-    </section>
-
-    <section class="cta">
-      <p class="section-label">Official LINE</p>
-      <h2 class="cta-title-pc">ご予約・お問い合わせは公式LINEへ</h2>
-      <h2 class="cta-title-sp">
-        <span class="text-line">ご予約・お問い合わせは</span>
-        <span class="text-line">公式LINEへ</span>
+    </div>
+    <div class="about-text">
+      <div class="eyebrow left fade-in">About</div>
+      <h2 class="title left fade-in d1">
+        農薬不使用の<br>
+        <span class="script">米粉</span>という選択。
       </h2>
-      <p class="cta-text-pc">
-        ご予約、取材、その他お問い合わせは公式LINEよりお願いいたします。
+      <div class="title-en left fade-in d1">— our precious ingredient.</div>
+      <p class="fade-in d2">
+        minoriの焼き菓子は、農薬・化学肥料を一切使わずに、自然の力だけで大切に育てられた静岡県産のお米を、丁寧に製粉した米粉からつくられています。
       </p>
-      <p class="cta-text-sp">
-        <span class="text-line">ご予約、取材、その他お問い合わせは</span>
-        <span class="text-line">公式LINEよりお願いいたします。</span>
+      <p class="fade-in d3">
+        小麦を使わないから、口あたりはふんわり軽く、後味はすっきり。素材ひとつひとつの表情が、静かに、やさしく立ち上がります。
       </p>
-      <a href="https://lin.ee/8O09nON" class="primary-btn">公式LINEへ</a>
-    </section>
-  </main>
+      <div class="about-features fade-in d4">
+        <div class="feat">
+          <div class="feat-icon">01</div>
+          <div class="feat-label">Gluten Free</div>
+          <div class="feat-desc">小麦不使用。<br>やさしい後味。</div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">02</div>
+          <div class="feat-label">Pesticide Free</div>
+          <div class="feat-desc">農薬・化学肥料<br>不使用の希少米。</div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">03</div>
+          <div class="feat-label">Shizuoka</div>
+          <div class="feat-desc">静岡の実りを<br>ひとつひとつ厳選。</div>
+        </div>
+        <div class="feat">
+          <div class="feat-icon">04</div>
+          <div class="feat-label">Handmade</div>
+          <div class="feat-desc">パティシエによる<br>丁寧な手仕事。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer class="footer">
-    <img src="image/5.png" alt="minori">
-    <p>minori baked sweets</p>
-    <small>&copy; minori</small>
-  </footer>
-  <script src="script.js?v=20260724-08"></script>
+<!-- Products -->
+<section class="products" id="products" data-screen-label="04 Products">
+  <div class="eyebrow fade-in">Products</div>
+  <h2 class="title fade-in d1">季節を映す、<span class="script">焼き菓子</span>。</h2>
+  <div class="title-en fade-in d1">— seasonal baked sweets, made with care.</div>
+
+  <div class="product-nav fade-in d2">
+    <button class="active" data-cat="all">All</button>
+    <button data-cat="cake">Cake</button>
+    <button data-cat="financier">Financier</button>
+    <button data-cat="diamant">Diamant Cookie</button>
+    <button data-cat="snowball">Snowball</button>
+    <button data-cat="gift">Gift</button>
+  </div>
+
+  <div class="products-grid">
+    <!-- Signature Lemon Cake -->
+    <div class="product fade-in" data-cat="cake">
+      <div class="product-img">
+        <div class="product-ribbon">— signature —</div>
+        <img class="photo-fit" src="image/D7A7015D-E8AA-4740-9710-CBEB9FECCD67_4_5005_c.jpeg" alt="レモンケーキ">
+      </div>
+      <div class="product-cat">Signature Cake</div>
+      <div class="product-name">清沢レモンケーキ</div>
+      <div class="product-desc">農薬不使用の清沢レモンを皮ごと贅沢に。芳醇な香りが余韻に残る一品。</div>
+      <div class="product-price">¥ 2,800 <span class="yen">/ 4個入</span></div>
+    </div>
+
+    <!-- Financiers -->
+    <div class="product fade-in d1" data-cat="financier">
+      <div class="product-img"><img class="photo-fit" src="image/94C0A15F-341A-4005-8A80-A7A01DFED787_1_105_c.jpeg" alt="フィナンシェ"></div>
+      <div class="product-cat">Financier</div>
+      <div class="product-name">焦がしバターのフィナンシェ</div>
+      <div class="product-desc">じっくり焦がしたバターの深い香りと、しっとりとした食感。</div>
+      <div class="product-price">¥ 320 <span class="yen">/ 1個</span></div>
+    </div>
+    <div class="product fade-in d2" data-cat="financier">
+      <div class="product-img"><img class="photo-fit" src="image/47634660-FA8D-4016-A1D9-877B5BDD4DC2_1_105_c.jpeg" alt="焼き菓子"></div>
+      <div class="product-cat">Financier</div>
+      <div class="product-name">アールグレイのフィナンシェ</div>
+      <div class="product-desc">ベルガモットの華やかな香り。午後のティータイムに、そっと。</div>
+      <div class="product-price">¥ 340 <span class="yen">/ 1個</span></div>
+    </div>
+    <div class="product fade-in d3" data-cat="financier">
+      <div class="product-img"><img class="photo-fit" src="image/087FD5FF-FFD7-451F-AE87-1F81F7FF85D5_1_105_c.jpeg" alt="抹茶の焼き菓子"></div>
+      <div class="product-cat">Financier</div>
+      <div class="product-name">高級抹茶のフィナンシェ</div>
+      <div class="product-desc">静岡・藤枝の一番茶を贅沢に。濃密な旨みと深い緑。</div>
+      <div class="product-price">¥ 380 <span class="yen">/ 1個</span></div>
+    </div>
+
+    <!-- Diamant Cookies -->
+    <div class="product fade-in" data-cat="diamant">
+      <div class="product-img"><img class="photo-fit" src="image/A9703D93-C857-466E-A6FC-12090D8DC847_1_105_c.jpeg" alt="ディアマンクッキー"></div>
+      <div class="product-cat">Diamant Cookie</div>
+      <div class="product-name">バターディアマン</div>
+      <div class="product-desc">きらめく砂糖をまとった、バター香るクッキー。</div>
+      <div class="product-price">¥ 980 <span class="yen">/ 1袋</span></div>
+    </div>
+    <div class="product fade-in d1" data-cat="diamant">
+      <div class="product-img"><img class="photo-fit" src="image/F17BEA97-D400-4132-8A27-83D7A607535A_4_5005_c.jpeg" alt="クッキー"></div>
+      <div class="product-cat">Diamant Cookie</div>
+      <div class="product-name">紅茶ディアマン</div>
+      <div class="product-desc">上質な紅茶葉を練り込んだ、香り豊かな一枚。</div>
+      <div class="product-price">¥ 1,080 <span class="yen">/ 1袋</span></div>
+    </div>
+    <div class="product fade-in d2" data-cat="diamant">
+      <div class="product-img"><img class="photo-fit" src="image/FBA31226-5A91-45E9-8A5F-7F6A935BE8FB_1_105_c.jpeg" alt="チョコチップクッキー"></div>
+      <div class="product-cat">Diamant Cookie</div>
+      <div class="product-name">チョコチップディアマン</div>
+      <div class="product-desc">ほろ苦チョコと、はらりとほどけるバター生地。</div>
+      <div class="product-price">¥ 1,080 <span class="yen">/ 1袋</span></div>
+    </div>
+    <div class="product fade-in d3" data-cat="diamant">
+      <div class="product-img"><img class="photo-fit" src="image/FFFA160C-D760-48D7-A3F7-729FA4B09405_1_105_c.jpeg" alt="チョコの焼き菓子"></div>
+      <div class="product-cat">Diamant Cookie</div>
+      <div class="product-name">チョコナッツディアマン</div>
+      <div class="product-desc">香ばしいナッツと濃密なチョコの、贅沢な組み合わせ。</div>
+      <div class="product-price">¥ 1,180 <span class="yen">/ 1袋</span></div>
+    </div>
+    <div class="product fade-in" data-cat="diamant">
+      <div class="product-img"><img class="photo-fit" src="image/3DF7E6A3-B666-4CA0-AABE-89B9CC795886_1_105_c.jpeg" alt="抹茶の焼き菓子"></div>
+      <div class="product-cat">Diamant Cookie</div>
+      <div class="product-name">高級抹茶ディアマン</div>
+      <div class="product-desc">深い抹茶の香りとバター。上品な余韻。</div>
+      <div class="product-price">¥ 1,180 <span class="yen">/ 1袋</span></div>
+    </div>
+
+    <!-- Snowballs -->
+    <div class="product fade-in d1" data-cat="snowball">
+      <div class="product-img"><img class="photo-fit" src="image/D1F4D343-6AF0-4E60-ACD5-CD01482F23C3_4_5005_c.jpeg" alt="スノーボール"></div>
+      <div class="product-cat">Snowball</div>
+      <div class="product-name">雪どけのほろほろスノーボール</div>
+      <div class="product-desc">口の中で、ほろりとほどける。やさしい甘さ。</div>
+      <div class="product-price">¥ 880 <span class="yen">/ 1袋</span></div>
+    </div>
+    <div class="product fade-in d2" data-cat="snowball">
+      <div class="product-img"><img class="photo-fit" src="image/0D836C6E-6A2F-41A3-967B-F8C71B5E996D_4_5005_c.jpeg" alt="抹茶スイーツ"></div>
+      <div class="product-cat">Snowball</div>
+      <div class="product-name">高級抹茶のスノーボール</div>
+      <div class="product-desc">静岡抹茶の深い緑をまとった、ほろほろの一粒。</div>
+      <div class="product-price">¥ 980 <span class="yen">/ 1袋</span></div>
+    </div>
+
+    <!-- Caramel -->
+    <div class="product fade-in d3" data-cat="cake">
+      <div class="product-img"><img class="photo-fit" src="image/9031F094-A658-4DE8-8C6A-72DAD2084527_4_5005_c.jpeg" alt="クッキー"></div>
+      <div class="product-cat">Cookie</div>
+      <div class="product-name">キャラメルナッツクッキー</div>
+      <div class="product-desc">香ばしいナッツと、じっくり炊いたキャラメル。</div>
+      <div class="product-price">¥ 1,080 <span class="yen">/ 1袋</span></div>
+    </div>
+
+    <!-- Gift Box -->
+    <div class="product fade-in" data-cat="gift">
+      <div class="product-img">
+        <div class="product-ribbon new">— for gift —</div>
+        <img class="photo-fit" src="image/87985CFB-90EC-486C-8C89-8137D1C9EABB_1_105_c.jpeg" alt="minoriのギフト">
+      </div>
+      <div class="product-cat">Gift Box</div>
+      <div class="product-name">minoriの詰め合わせ（小）</div>
+      <div class="product-desc">季節の焼き菓子6種を、リボンを添えてお届けします。</div>
+      <div class="product-price">¥ 3,600 <span class="yen">/ box</span></div>
+    </div>
+    <div class="product fade-in d1" data-cat="gift">
+      <div class="product-img">
+        <div class="product-ribbon">— for gift —</div>
+        <img class="photo-fit" src="image/9EB2D949-B4C8-41A3-B172-6855901A2D3E_4_5005_c.jpeg" alt="ギフトボックス">
+      </div>
+      <div class="product-cat">Gift Box</div>
+      <div class="product-name">minoriの詰め合わせ（大）</div>
+      <div class="product-desc">大切な方への贈り物に。10種のセレクションを詰めて。</div>
+      <div class="product-price">¥ 5,800 <span class="yen">/ box</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Story - Letter -->
+<section class="story" id="story" data-screen-label="05 Story">
+  <div class="story-inner fade-in">
+    <div class="story-stamp">
+      <span class="top">Since</span>
+      <span class="mid">2024</span>
+      <span class="bot">minori</span>
+    </div>
+    <div class="story-eyebrow">— A letter from our patissier —</div>
+    <div class="story-greeting">Dear you,</div>
+    <div class="story-body">
+      <p class="lead">あなたの人生に、そっと寄り添い続けるお店でありたい。</p>
+      <p>女性の人生には、いくつもの大切な節目があります。仕事の飛躍、結婚、妊活、つわり、妊娠、子育て、社会復帰、子育てと仕事の両立、孫育て。</p>
+      <p>時に立ち止まって涙する日、懸命に駆け抜ける毎日、幸せを分かち合う日も。あなたの人生に、そっと寄り添い続けるお店でありたいと願っています。</p>
+      <p class="emph">私自身が「小麦アレルギー当事者」であるという経験。そして、パティシエとしてのこだわりを込めて。</p>
+      <p>静岡の実りや、希少な農薬不使用の米粉を厳選し、「静岡の実りで健康と美容を育む」をテーマに、「大切な人への想いを紡ぐ焼菓子」を、ひとつひとつ丁寧に仕立てています。</p>
+      <p>大切なあの人に贈るギフトを。毎日頑張っている自分へのご褒美時間に、お立ち寄りいただけたら幸いです。</p>
+      <p>あなたにお逢いできる日を、心より楽しみにしております。</p>
+    </div>
+    <div class="story-sign">
+      <div class="role">Owner Pâtissier,</div>
+      <div class="name">minori</div>
+      <div class="name-jp">— オーナーパティシエ</div>
+    </div>
+  </div>
+</section>
+
+<!-- Store -->
+<section class="store" id="store" data-screen-label="06 Store">
+  <div class="store-grid">
+    <div class="store-image fade-in">
+      <img class="photo-fit" src="image/EF8A7D91-CA54-4635-A4BE-FF7B2E94885D_1_105_c.jpeg" alt="店舗外観">
+      <div class="caption">— welcome to our little atelier —</div>
+    </div>
+    <div class="store-text">
+      <div class="eyebrow left fade-in">Store Information</div>
+      <h2 class="title left fade-in d1">予約制の、<span class="script">小さなお店</span>。</h2>
+      <div class="title-en left fade-in d1">— by appointment only.</div>
+      <div class="store-badge fade-in d2">— welcome —</div>
+      <div class="store-info fade-in d3">
+        <div class="store-info-row"><dt>Address</dt><dd>〒421-0122<br>静岡県静岡市駿河区用宗3丁目9-27</dd></div>
+        <div class="store-info-row"><dt>Open</dt><dd>金曜日・土曜日（不定期）<br>10:00-15:00</dd></div>
+        <div class="store-info-row"><dt>Contact</dt><dd>公式LINEよりお願いいたします</dd></div>
+        <div class="store-info-row"><dt>Style</dt><dd>間借り営業</dd></div>
+      </div>
+      <div class="store-note fade-in d4">
+        <span class="accent">営業日は金曜日・土曜日を中心に不定期です。</span><br>販売内容やご予約については、公式LINEまたはInstagramよりご確認ください。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta" data-screen-label="07 Official LINE">
+  <span class="cta-decoration left">✿</span>
+  <span class="cta-decoration right">♡</span>
+  <div class="eyebrow fade-in">Official LINE</div>
+  <h2 class="fade-in d1">ご自宅で、minoriの時間を。</h2>
+  <div class="cta-en fade-in d1">— delivered with love, to your door.</div>
+  <p class="fade-in d2">お店の焼き菓子を、そのままオンラインでもお楽しみいただけます。<br>大切な方へのギフトにも、頑張った自分へのご褒美にも。</p>
+  <a href="https://lin.ee/8O09nON" class="cta-btn fade-in d3">
+    Official LINE <span class="arrow">→</span>
+  </a>
+</section>
+
+<!-- Journal -->
+<section class="journal" id="journal" data-screen-label="08 Journal">
+  <div class="journal-header">
+    <div class="left">
+      <div class="eyebrow left fade-in">Journal</div>
+      <h2 class="title left fade-in d1">日々のこと、お知らせ。</h2>
+      <div class="title-en left fade-in d1">— notes from our kitchen.</div>
+    </div>
+    <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="journal-more fade-in d1" target="_blank" rel="noopener">View all <span>→</span></a>
+  </div>
+  <div class="journal-grid">
+    <div class="journal-item fade-in">
+      <div class="img"><img class="photo-fit" src="image/713467E0-5B68-4977-AA4E-E446A1FF4420_1_105_c.jpeg" alt="出店情報"></div>
+      <div class="content">
+        <div class="meta"><span class="date">Jul 20, 2026</span><span class="cat">News</span></div>
+        <div class="title" style="text-align:left;font-size:15px;margin-bottom:0;">夏の限定焼き菓子、清沢レモンケーキをご用意しました</div>
+      </div>
+    </div>
+    <div class="journal-item fade-in d1">
+      <div class="img"><img class="photo-fit" src="image/500BA899-0D97-4DBA-AB2F-7009C1FE6ADD_1_102_o.jpeg" alt="公式LINE案内"></div>
+      <div class="content">
+        <div class="meta"><span class="date">Jul 10, 2026</span><span class="cat">Story</span></div>
+        <div class="title" style="text-align:left;font-size:15px;margin-bottom:0;">農薬不使用のお米ができるまで、生産者を訪ねて</div>
+      </div>
+    </div>
+    <div class="journal-item fade-in d2">
+      <div class="img"><img class="photo-fit" src="image/97E7A1DD-7ADD-4428-BEB7-5925B5BB2455_1_105_c.jpeg" alt="ギフト案内"></div>
+      <div class="content">
+        <div class="meta"><span class="date">Jun 28, 2026</span><span class="cat">Gift</span></div>
+        <div class="title" style="text-align:left;font-size:15px;margin-bottom:0;">結婚祝いに、minoriのギフトボックスを</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instagram -->
+<section class="insta">
+  <div class="eyebrow fade-in">Instagram</div>
+  <h2 class="title fade-in d1" style="margin-bottom:8px;">日々を、そっと綴って。</h2>
+  <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="insta-handle fade-in d1" target="_blank" rel="noopener">@minori_yakigashi.shizuoka ↗</a>
+  <div class="insta-grid fade-in d2">
+    <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="item" target="_blank" rel="noopener"><img class="photo-fit" src="image/001EDBB1-DEEF-41C0-B6F7-577C7AD47260_4_5005_c.jpeg" alt="minoriの販売風景"></a>
+    <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="item" target="_blank" rel="noopener"><img class="photo-fit" src="image/0D836C6E-6A2F-41A3-967B-F8C71B5E996D_4_5005_c.jpeg" alt="抹茶スイーツ"></a>
+    <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="item" target="_blank" rel="noopener"><img class="photo-fit" src="image/1F0C427D-101B-41F6-ABB5-8DA3B8DBFD2B_4_5005_c.jpeg" alt="焼き菓子の販売"></a>
+    <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="item" target="_blank" rel="noopener"><img class="photo-fit" src="image/87985CFB-90EC-486C-8C89-8137D1C9EABB_1_105_c.jpeg" alt="ギフト"></a>
+    <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="item" target="_blank" rel="noopener"><img class="photo-fit" src="image/D7A7015D-E8AA-4740-9710-CBEB9FECCD67_4_5005_c.jpeg" alt="レモンケーキ"></a>
+    <a href="https://www.instagram.com/minori_yakigashi.shizuoka" class="item" target="_blank" rel="noopener"><img class="photo-fit" src="image/F697F9F5-02A3-4949-833D-6AEB0223D794_4_5005_c.jpeg" alt="焼き菓子"></a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact" data-screen-label="09 Contact">
+  <div class="contact-inner">
+    <div class="eyebrow fade-in">Contact</div>
+    <h2 class="title fade-in d1">お問い合わせ・ご予約</h2>
+    <div class="title-en fade-in d1">— we'd love to hear from you.</div>
+    <p style="font-family:'Noto Sans JP',sans-serif;font-weight:300;font-size:14px;line-height:2.2;color:var(--brown-3);max-width:520px;margin:0 auto;" class="fade-in d2">
+      ご予約、ギフトのご相談、そのほか気になることがございましたら、<br>お気軽にお問い合わせくださいませ。
+    </p>
+    <div class="contact-form fade-in d3">
+      <div class="contact-row">
+        <div class="contact-field">
+          <label>お名前<span class="req">*</span></label>
+          <input type="text" placeholder="山田 花子" required>
+        </div>
+        <div class="contact-field">
+          <label>メールアドレス<span class="req">*</span></label>
+          <input type="email" placeholder="your@email.com" required>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-field">
+          <label>ご用件</label>
+          <select>
+            <option>ご予約について</option>
+            <option>ギフトのご相談</option>
+            <option>オンラインショップについて</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="contact-field">
+          <label>お電話番号</label>
+          <input type="tel" placeholder="090-1234-5678">
+        </div>
+      </div>
+      <div class="contact-field">
+        <label>メッセージ<span class="req">*</span></label>
+        <textarea placeholder="お気軽にご相談ください。" required></textarea>
+      </div>
+      <a href="https://lin.ee/8O09nON" class="contact-submit">Official LINE →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-large">minori</div>
+      <div class="tag">— gentle sweets, from Shizuoka.</div>
+      <p>農薬不使用の米粉と静岡の実りから生まれる、やさしい焼き菓子。あなたの人生の節目にそっと寄り添う一箱を、丁寧にお届けします。</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/minori_yakigashi.shizuoka" title="Instagram" target="_blank" rel="noopener">IG</a>
+        
+        
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="https://lin.ee/8O09nON">Official LINE</a></li>
+        <li><a href="#products">Gift Box</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Newsletter</h4>
+      <p>季節の焼き菓子や、<br>ちいさなお知らせをお届けします。</p>
+      <div class="input-wrap">
+        <input type="email" placeholder="your@email.com">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <div>© 2026 minori. All rights reserved.</div>
+    <div class="legal">
+      
+      
+      <span>— made with love in Shizuoka —</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
