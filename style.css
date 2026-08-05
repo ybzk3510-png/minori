@@ -109,6 +109,7 @@
 
   /* Menu button mobile */
   .menu-btn{display:none;}
+  .mobile-menu{display:none;}
 
   /* ============ Hero ============ */
   .hero{
@@ -692,6 +693,60 @@
     }
     .menu-btn span{width:20px;height:1px;background:var(--brown);display:block;}
     .header-right{display:none;}
+    .mobile-menu{
+      display:block;
+      position:absolute;
+      top:calc(100% + 10px);
+      left:20px;
+      right:20px;
+      padding:28px 24px;
+      background:rgba(255,255,255,.96);
+      border:1px solid var(--line);
+      border-radius:8px;
+      box-shadow:var(--shadow-lg);
+      opacity:0;
+      visibility:hidden;
+      transform:translateY(-8px);
+      transition:opacity .3s ease,visibility .3s ease,transform .3s ease;
+      pointer-events:none;
+    }
+    .mobile-menu.is-open{
+      opacity:1;
+      visibility:visible;
+      transform:translateY(0);
+      pointer-events:auto;
+    }
+    .mobile-menu-nav{
+      display:grid;
+      gap:16px;
+      margin-bottom:22px;
+    }
+    .mobile-menu-nav a{
+      font-family:"Cormorant Garamond",serif;
+      font-style:italic;
+      font-size:20px;
+      color:var(--brown);
+      border-bottom:1px dashed var(--line);
+      padding-bottom:12px;
+    }
+    .mobile-line{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      padding:14px 18px;
+      background:var(--rose);
+      color:#fff;
+      border-radius:100px;
+      font-family:"Jost",sans-serif;
+      font-size:10px;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+    }
+    .menu-btn.is-open span:nth-child(1){transform:translateY(6px) rotate(35deg);}
+    .menu-btn.is-open span:nth-child(2){opacity:0;}
+    .menu-btn.is-open span:nth-child(3){transform:translateY(-6px) rotate(-35deg);}
+    .menu-btn span{transition:transform .25s ease,opacity .25s ease;}
     .hero{padding:100px 20px 80px;}
     .hero-collage{height:280px;}
     .hero-collage .img-1,.hero-collage .img-3{width:130px;height:180px;}
@@ -765,7 +820,7 @@
     .hero-scroll{display:none;}
 
     section{padding:64px 18px;}
-    .story{padding-left:18px;padding-right:18px;}
+    .story{padding-left:22px;padding-right:22px;}
     .eyebrow{font-size:9px;letter-spacing:.28em;margin-bottom:24px;}
     .title{
       font-size:28px;
@@ -811,7 +866,7 @@
     .product-name{font-size:15px;}
     .product-desc{font-size:11px;line-height:1.9;}
 
-    .story-inner{padding:44px 16px;}
+    .story-inner{padding:44px 22px;}
     .story-inner::before{inset:10px;}
     .story-stamp{display:none;}
     .story-eyebrow{

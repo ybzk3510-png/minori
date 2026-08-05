@@ -5,6 +5,33 @@
     else header.classList.remove('scrolled');
   });
 
+  // Mobile menu
+  const menuBtn = document.querySelector('.menu-btn');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if(menuBtn && mobileMenu){
+    const closeMobileMenu = () => {
+      menuBtn.classList.remove('is-open');
+      mobileMenu.classList.remove('is-open');
+      menuBtn.setAttribute('aria-expanded','false');
+      mobileMenu.setAttribute('aria-hidden','true');
+    };
+
+    menuBtn.addEventListener('click',()=>{
+      const isOpen = mobileMenu.classList.toggle('is-open');
+      menuBtn.classList.toggle('is-open',isOpen);
+      menuBtn.setAttribute('aria-expanded',String(isOpen));
+      mobileMenu.setAttribute('aria-hidden',String(!isOpen));
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link=>{
+      link.addEventListener('click',closeMobileMenu);
+    });
+
+    window.addEventListener('resize',()=>{
+      if(window.innerWidth > 960) closeMobileMenu();
+    });
+  }
+
   // Fade in on scroll
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
