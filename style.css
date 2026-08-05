@@ -866,33 +866,41 @@
     .product-name{font-size:15px;}
     .product-desc{font-size:11px;line-height:1.9;}
 
-    .story-inner{padding:44px 22px;}
+    .story-inner{padding:38px 22px 42px;}
     .story-inner::before{inset:10px;}
     .story-stamp{display:none;}
     .story-eyebrow{
-      font-size:9px;
-      letter-spacing:.18em;
+      font-size:8px;
+      letter-spacing:.16em;
       white-space:nowrap;
-      margin-bottom:14px;
+      margin-bottom:18px;
+    }
+    .story-greeting{
+      font-size:28px;
+      margin-bottom:34px;
     }
     .story-title{font-size:24px;line-height:1.75;margin-bottom:30px;}
     .story-body{
-      font-size:12px;
-      line-height:1.95;
+      font-size:11.8px;
+      line-height:1.9;
       letter-spacing:.01em;
     }
-    .story-body p{margin-bottom:18px;}
+    .story-body p{margin-bottom:16px;}
     .story-body .lead{
-      font-size:12.5px;
-      line-height:1.9;
+      font-size:12.8px;
+      line-height:1.85;
       letter-spacing:0;
+      margin-bottom:22px;
     }
     .story-body p.emph{
-      padding:18px;
-      line-height:2;
-      margin:22px 0;
+      padding:16px 18px;
+      line-height:1.9;
+      margin:20px 0 22px;
     }
-    .story-sign{margin-top:36px;}
+    .story-sign{margin-top:30px;}
+    .story-sign .role{font-size:12px;margin-bottom:6px;}
+    .story-sign .name{font-size:24px;letter-spacing:.28em;}
+    .story-sign .name-jp{font-size:12px;letter-spacing:.12em;margin-top:6px;}
 
     .store-image{aspect-ratio:4/3;}
     .store-title{
