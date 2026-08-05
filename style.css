@@ -765,7 +765,6 @@
     .hero-scroll{display:none;}
 
     section{padding:64px 18px;}
-    .story{padding-left:10px;padding-right:10px;}
     .eyebrow{font-size:9px;letter-spacing:.28em;margin-bottom:24px;}
     .title{
       font-size:28px;
@@ -811,19 +810,18 @@
     .product-name{font-size:15px;}
     .product-desc{font-size:11px;line-height:1.9;}
 
-    .story-inner{padding:44px 14px;}
-    .story-inner::before{inset:8px;}
+    .story-inner{padding:44px 24px;}
+    .story-inner::before{inset:10px;}
     .story-stamp{display:none;}
     .story-title{font-size:24px;line-height:1.75;margin-bottom:30px;}
     .story-body{
-      font-size:12.8px;
-      line-height:2.05;
-      letter-spacing:0;
+      font-size:12.5px;
+      line-height:2.1;
+      letter-spacing:.02em;
     }
     .story-body .lead{
-      font-size:14px;
       line-height:2;
-      letter-spacing:.02em;
+      letter-spacing:.04em;
     }
 
     .store-image{aspect-ratio:4/3;}
