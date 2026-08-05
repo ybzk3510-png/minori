@@ -810,7 +810,7 @@
     .product-name{font-size:15px;}
     .product-desc{font-size:11px;line-height:1.9;}
 
-    .story-inner{padding:44px 24px;}
+    .story-inner{padding:44px 18px;}
     .story-inner::before{inset:10px;}
     .story-stamp{display:none;}
     .story-eyebrow{
@@ -826,8 +826,9 @@
       letter-spacing:.02em;
     }
     .story-body .lead{
+      font-size:12.5px;
       line-height:2;
-      letter-spacing:.04em;
+      letter-spacing:0;
     }
 
     .store-image{aspect-ratio:4/3;}
