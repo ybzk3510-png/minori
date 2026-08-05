@@ -808,14 +808,14 @@
     .product-name{font-size:15px;}
     .product-desc{font-size:11px;line-height:1.9;}
 
-    .story-inner{padding:44px 24px;}
+    .story-inner{padding:44px 18px;}
     .story-inner::before{inset:10px;}
     .story-stamp{display:none;}
     .story-title{font-size:24px;line-height:1.75;margin-bottom:30px;}
     .story-body{
       font-size:12.5px;
       line-height:2.1;
-      letter-spacing:.02em;
+      letter-spacing:.01em;
     }
     .story-body .lead{
       line-height:2;
