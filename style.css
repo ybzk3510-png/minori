@@ -765,6 +765,7 @@
     .hero-scroll{display:none;}
 
     section{padding:64px 18px;}
+    .story{padding-left:18px;padding-right:18px;}
     .eyebrow{font-size:9px;letter-spacing:.28em;margin-bottom:24px;}
     .title{
       font-size:28px;
@@ -810,7 +811,7 @@
     .product-name{font-size:15px;}
     .product-desc{font-size:11px;line-height:1.9;}
 
-    .story-inner{padding:44px 18px;}
+    .story-inner{padding:44px 16px;}
     .story-inner::before{inset:10px;}
     .story-stamp{display:none;}
     .story-eyebrow{
