@@ -813,6 +813,12 @@
     .story-inner{padding:44px 24px;}
     .story-inner::before{inset:10px;}
     .story-stamp{display:none;}
+    .story-eyebrow{
+      font-size:9px;
+      letter-spacing:.18em;
+      white-space:nowrap;
+      margin-bottom:14px;
+    }
     .story-title{font-size:24px;line-height:1.75;margin-bottom:30px;}
     .story-body{
       font-size:12.5px;
