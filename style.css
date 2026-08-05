@@ -447,6 +447,11 @@
     display:inline-block;padding:7px 18px;background:var(--pink-3);color:#fff;border-radius:100px;
     font-family:"Cormorant Garamond",serif;font-style:italic;font-size:13px;margin-bottom:16px;
   }
+  .store-title{
+    font-size:clamp(30px,3.2vw,44px);
+    letter-spacing:.06em;
+    white-space:nowrap;
+  }
   .store-info{
     background:var(--cream);padding:32px;border-radius:8px;margin-top:20px;
     border:1px solid var(--line);
@@ -692,6 +697,7 @@
     .hero-petal{display:none;}
     section{padding:80px 20px;}
     .about-grid,.store-grid{grid-template-columns:1fr;gap:60px;}
+    .store-title{white-space:normal;}
     .about-images{height:420px;}
     .products-grid{grid-template-columns:1fr 1fr;gap:32px 16px;}
     .story-inner{padding:56px 32px;}
@@ -705,11 +711,141 @@
     .about-features{grid-template-columns:1fr;}
   }
   @media (max-width:480px){
-    .hero h1{font-size:40px;}
-    .hero-collage .img-1,.hero-collage .img-3{width:100px;height:140px;}
-    .hero-collage .img-2{width:140px;height:180px;}
+    body{overflow-x:hidden;}
+    .header{padding:12px 16px;}
+    .logo{font-size:22px;letter-spacing:.24em;}
+    .menu-btn{padding:6px;}
+
+    .hero{
+      min-height:auto;
+      padding:94px 18px 58px;
+      justify-content:flex-start;
+    }
+    .hero-ornament{font-size:21px;margin-bottom:14px;}
+    .hero-eyebrow{
+      font-size:9px;
+      letter-spacing:.22em;
+      gap:8px;
+      margin-bottom:24px;
+      white-space:nowrap;
+    }
+    .hero-eyebrow::before,.hero-eyebrow::after{width:14px;}
+    .hero h1{
+      font-size:32px;
+      line-height:1.55;
+      letter-spacing:.05em;
+      margin-bottom:0;
+    }
+    .hero h1 .brand-jp{
+      margin-top:14px;
+      font-size:.42em;
+      letter-spacing:.12em;
+    }
+    .hero h1 .brand-jp::before,.hero h1 .brand-jp::after{display:none;}
+    .hero-sub{
+      max-width:310px;
+      margin-top:28px;
+      font-size:12px !important;
+      line-height:2.05;
+      letter-spacing:.03em;
+    }
+    .hero-collage{
+      height:230px;
+      margin-top:42px;
+    }
+    .hero-collage .img-1,.hero-collage .img-3{width:96px;height:132px;}
+    .hero-collage .img-1{left:2%;top:54px;}
+    .hero-collage .img-2{width:142px;height:182px;}
+    .hero-collage .img-3{right:2%;top:48px;}
+    .hero-badge{top:-18px;padding:8px 16px;font-size:11px;}
+    .hero-scroll{display:none;}
+
+    section{padding:64px 18px;}
+    .eyebrow{font-size:9px;letter-spacing:.28em;margin-bottom:24px;}
+    .title{
+      font-size:28px;
+      line-height:1.65;
+      letter-spacing:.06em;
+      margin-bottom:16px;
+    }
+    .title-en{font-size:17px;margin-bottom:38px;}
+    .concept-quote{font-size:20px;line-height:1.9;letter-spacing:.08em;}
+    .concept-body p{
+      font-size:13px;
+      line-height:2.15;
+      letter-spacing:.03em;
+    }
+
+    .about-grid,.store-grid{gap:44px;}
+    .about-images{height:320px;}
+    .about-images .img-1{width:74%;height:230px;}
+    .about-images .img-2{width:42%;height:150px;right:0;bottom:0;}
+    .about-images .img-tag{left:12px;bottom:14px;font-size:12px;}
+    .about-text p{
+      font-size:13px;
+      line-height:2.1;
+      letter-spacing:.03em;
+    }
+    .about-features{gap:12px;}
+    .about-features .feat{padding:20px 16px;}
+
     .products-grid{grid-template-columns:1fr;}
+    .products{padding-left:18px;padding-right:18px;}
+    .product-nav{
+      justify-content:flex-start;
+      overflow-x:auto;
+      padding-bottom:6px;
+      gap:8px;
+    }
+    .product-nav button{
+      flex:0 0 auto;
+      padding:8px 14px;
+      font-size:11px;
+    }
+    .product-img{aspect-ratio:4/3;}
+    .product-name{font-size:15px;}
+    .product-desc{font-size:11px;line-height:1.9;}
+
     .story-inner{padding:44px 24px;}
-    .product-nav{gap:0;}
-    .product-nav button{padding:8px 14px;font-size:12px;}
+    .story-inner::before{inset:10px;}
+    .story-stamp{display:none;}
+    .story-title{font-size:24px;line-height:1.75;margin-bottom:30px;}
+    .story-body{
+      font-size:13px;
+      line-height:2.15;
+      letter-spacing:.04em;
+    }
+
+    .store-image{aspect-ratio:4/3;}
+    .store-title{
+      font-size:27px;
+      line-height:1.65;
+      letter-spacing:.04em;
+    }
+    .store-info{padding:24px 20px;}
+    .store-info-row{grid-template-columns:68px 1fr;gap:12px;padding:14px 0;}
+    .store-info-row dd{font-size:12px;line-height:1.9;}
+    .store-note{padding:18px 16px;font-size:12px;line-height:1.9;}
+
+    .cta{padding:96px 18px;}
+    .cta h2{font-size:26px;line-height:1.75;letter-spacing:.06em;}
+    .cta p{font-size:13px;line-height:2;max-width:310px;}
+    .cta-decoration{display:none;}
+
+    .journal-header{margin-bottom:36px;}
+    .journal-item{grid-template-columns:108px 1fr;gap:16px;}
+    .journal-item .img{height:108px;}
+    .journal-item .title{font-size:13px;line-height:1.7;}
+    .insta-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
+
+    .contact-inner{text-align:center;}
+    .contact-form{padding:28px 18px;}
+    .contact-submit{width:100%;padding:15px 20px;}
+
+    .footer{padding:70px 20px 34px;}
+    .footer-top{gap:30px;}
+    .footer-brand .logo-large{font-size:32px;text-align:left;}
+    .footer-brand p{max-width:none;font-size:12px;line-height:2;}
+    .footer-bot{flex-direction:column;align-items:flex-start;gap:12px;}
+    .footer-bot .legal{gap:16px;flex-wrap:wrap;}
   }
