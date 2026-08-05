@@ -877,15 +877,22 @@
     }
     .story-title{font-size:24px;line-height:1.75;margin-bottom:30px;}
     .story-body{
-      font-size:12.5px;
-      line-height:2.1;
-      letter-spacing:.02em;
+      font-size:12px;
+      line-height:1.95;
+      letter-spacing:.01em;
     }
+    .story-body p{margin-bottom:18px;}
     .story-body .lead{
       font-size:12.5px;
-      line-height:2;
+      line-height:1.9;
       letter-spacing:0;
     }
+    .story-body p.emph{
+      padding:18px;
+      line-height:2;
+      margin:22px 0;
+    }
+    .story-sign{margin-top:36px;}
 
     .store-image{aspect-ratio:4/3;}
     .store-title{
