@@ -263,22 +263,27 @@
     max-width:1200px;margin:0 auto;
     display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
   }
-  .about-images{position:relative;height:540px;}
+  .about-images{
+    position:relative;
+    height:auto;
+    display:grid;
+    gap:18px;
+  }
   .about-images .img{
-    position:absolute;overflow:hidden;box-shadow:var(--shadow-lg);
+    position:relative;overflow:hidden;box-shadow:var(--shadow-lg);
     transition:transform .8s ease;
   }
   .about-images .img .ph{width:100%;height:100%;}
   .about-images .img-1{
-    left:0;top:0;width:62%;height:420px;
-    border-radius:200px 200px 4px 4px;
+    width:100%;height:auto;aspect-ratio:16/10;
+    border-radius:8px;
   }
   .about-images .img-2{
-    right:0;bottom:0;width:56%;height:340px;
-    border-radius:4px 4px 200px 200px;
+    width:100%;height:auto;aspect-ratio:16/10;
+    border-radius:8px;
   }
   .about-images .img-tag{
-    position:absolute;bottom:-16px;left:-16px;z-index:3;
+    position:absolute;bottom:18px;left:18px;z-index:3;
     background:#fff;padding:16px 20px;border-radius:2px;box-shadow:var(--shadow-md);
     font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14px;color:var(--rose-deep);
     max-width:200px;line-height:1.5;
@@ -624,7 +629,7 @@
   }
   .footer-top{
     max-width:1200px;margin:0 auto;
-    display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:60px;
+    display:grid;grid-template-columns:2fr 1fr 1.4fr;gap:60px;
     padding-bottom:60px;border-bottom:1px dashed rgba(201,156,147,.35);
   }
   .footer-brand .logo-large{
@@ -755,7 +760,7 @@
     section{padding:80px 20px;}
     .about-grid,.store-grid{grid-template-columns:1fr;gap:60px;}
     .store-title{white-space:normal;}
-    .about-images{height:420px;}
+    .about-images{height:auto;}
     .products-grid{grid-template-columns:1fr 1fr;gap:32px 16px;}
     .story-inner{padding:56px 32px;}
     .story-stamp{width:70px;height:70px;top:20px;right:20px;}
@@ -837,10 +842,15 @@
     }
 
     .about-grid,.store-grid{gap:44px;}
-    .about-images{height:320px;}
-    .about-images .img-1{width:74%;height:230px;}
-    .about-images .img-2{width:42%;height:150px;right:0;bottom:0;}
-    .about-images .img-tag{left:12px;bottom:14px;font-size:12px;}
+    .about-images{height:auto;gap:14px;}
+    .about-images .img-1,
+    .about-images .img-2{
+      width:100%;
+      height:auto;
+      aspect-ratio:16/10;
+      border-radius:8px;
+    }
+    .about-images .img-tag{left:12px;bottom:12px;font-size:12px;}
     .about-text p{
       font-size:13px;
       line-height:2.1;
