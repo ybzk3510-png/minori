@@ -181,7 +181,7 @@
   }
   .hero-collage .img:hover{transform:translateY(-6px) rotate(0deg) !important;}
   .hero-collage .img-1{left:6%;top:44px;width:220px;height:280px;transform:rotate(-6deg);}
-  .hero-collage .img-2{left:50%;top:0;width:280px;height:340px;transform:translateX(-50%);z-index:2;}
+  .hero-collage .img-2{left:50%;top:34px;width:220px;height:280px;transform:translateX(-50%);z-index:2;}
   .hero-collage .img-3{right:6%;top:32px;width:220px;height:280px;transform:rotate(6deg);}
   .hero-collage .img-2:hover{transform:translateX(-50%) translateY(-6px) !important;}
 
@@ -754,8 +754,7 @@
     .menu-btn span{transition:transform .25s ease,opacity .25s ease;}
     .hero{padding:100px 20px 80px;}
     .hero-collage{height:280px;}
-    .hero-collage .img-1,.hero-collage .img-3{width:130px;height:180px;}
-    .hero-collage .img-2{width:180px;height:230px;}
+    .hero-collage .img-1,.hero-collage .img-2,.hero-collage .img-3{width:130px;height:180px;}
     .hero-petal{display:none;}
     section{padding:80px 20px;}
     .about-grid,.store-grid{grid-template-columns:1fr;gap:60px;}
@@ -817,9 +816,9 @@
       height:230px;
       margin-top:42px;
     }
-    .hero-collage .img-1,.hero-collage .img-3{width:96px;height:132px;}
+    .hero-collage .img-1,.hero-collage .img-2,.hero-collage .img-3{width:96px;height:132px;}
     .hero-collage .img-1{left:2%;top:54px;}
-    .hero-collage .img-2{width:142px;height:182px;}
+    .hero-collage .img-2{top:44px;}
     .hero-collage .img-3{right:2%;top:48px;}
     .hero-badge{top:-18px;padding:8px 16px;font-size:11px;}
     .hero-scroll{display:none;}
