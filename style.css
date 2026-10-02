@@ -282,7 +282,7 @@
     width:100%;height:auto;aspect-ratio:16/10;
     border-radius:8px;
   }
-  .about-images .img-tag{
+  .about-images .img .img-tag{
     position:absolute;bottom:18px;left:18px;z-index:3;
     background:#fff;padding:16px 20px;border-radius:2px;box-shadow:var(--shadow-md);
     font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14px;color:var(--rose-deep);
@@ -358,6 +358,10 @@
     z-index:2;
   }
   .product-ribbon.new{background:var(--rose);color:#fff;}
+  .product-ribbon.petit-gift{
+    background:var(--cream-2);color:var(--brown-3);
+    border:1px solid rgba(143,126,118,.28);
+  }
   .product-cat{
     font-family:"Cormorant Garamond",serif;font-style:italic;font-size:13px;
     color:var(--rose-deep);text-align:center;margin-bottom:6px;
