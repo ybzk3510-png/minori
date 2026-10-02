@@ -514,7 +514,7 @@
   }
   .cta p{
     font-family:"Noto Sans JP",sans-serif;font-weight:300;font-size:14px;line-height:2.2;
-    color:rgba(255,255,255,.88);max-width:480px;margin:0 auto 44px;position:relative;z-index:2;
+    color:rgba(255,255,255,.88);max-width:720px;margin:0 auto 44px;position:relative;z-index:2;
   }
   .cta-btn{
     display:inline-flex;align-items:center;gap:14px;
@@ -601,6 +601,8 @@
     margin-top:48px;background:#fff;padding:56px 48px;border-radius:8px;
     box-shadow:var(--shadow-md);text-align:left;
   }
+  .contact-line-action{margin-top:36px;}
+  .contact-line-action .contact-submit{margin-top:0;}
   .contact-row{
     display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px;
   }
