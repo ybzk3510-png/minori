@@ -855,7 +855,8 @@
       aspect-ratio:16/10;
       border-radius:8px;
     }
-    .about-images .img-tag{left:12px;bottom:12px;font-size:12px;}
+    .about-images .img-tag{left:12px;bottom:12px;padding:12px 14px;font-size:11px;}
+    .about-images .img-tag .num{font-size:8px;margin-bottom:3px;}
     .about-text p{
       font-size:13px;
       line-height:2.1;
