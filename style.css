@@ -65,7 +65,7 @@
   .fade-in.visible{opacity:1;transform:translateY(0);}
   .fade-in.d1{transition-delay:.12s;} .fade-in.d2{transition-delay:.24s;}
   .fade-in.d3{transition-delay:.36s;} .fade-in.d4{transition-delay:.48s;}
-
+ 
   /* ============ Header ============ */
   .header{
     position:fixed;top:0;left:0;right:0;z-index:100;
